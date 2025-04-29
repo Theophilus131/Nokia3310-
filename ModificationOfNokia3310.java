@@ -1,14 +1,17 @@
 					import java.util.Scanner;
-					public class Nokia3310 {
+					public class ModificationOfNokia3310 {
   					public static void main(String[] args) {
      					Scanner input = new Scanner(System.in);
-					
+				
+			   boolean start = true;
+			while(start){
+	
 				String message = """
 	                
-                         T-phils Nokia Menu Map:
-		         Enter:
+                         My Nokia Menu Map:
+		         Enter any option bellow:
                        
-                         1 - Phone book
+                         1 - Phone  book
                          2 - Messages
                          3 - Chat
                          4 - Call register
@@ -29,7 +32,10 @@
 		
 
 	switch(number) {
-case 1:
+	               
+	case 1:
+			 boolean inPhoneBook = true;
+   			 while (inPhoneBook) {
 			
 			String phoneBook = """
    
@@ -45,16 +51,18 @@ case 1:
     8  - Option
     9  - Speed dials
     10 - Voice tags
+    0  - Back
+	
   
     """;
-	                System.out.println(phoneBook);
+	                
+			System.out.println(phoneBook);
 			System.out.print("enter a number to select: ");
 			int number2 = input.nextInt();
 			
 
 			switch(number2) {
-                        case 1:
-			    System.out.println("search");
+case 1:			    System.out.println("search");
 			      break;
 			case 2:
 			    System.out.println("Service Nos.");
@@ -103,7 +111,7 @@ case 1:
 	
 			default:
 			     break;
-			}
+			}}// closing bracet for loop
 			     break;
 
 case 2:
@@ -263,8 +271,7 @@ case 4:
 			System.out.println(callMenu);
 			System.out.print("enter a number to select: ");
 			int number7 = input.nextInt();
-	                 
-			switch(number7) {
+	                switch(number7) {
 			  case 1:
                              System.out.println("Missed call");
 			      break;
@@ -638,7 +645,9 @@ case 13:
 			break;                       
                         }
 
-			
+
+
+			}// closing bracket for the while loop
 }
 }
 
