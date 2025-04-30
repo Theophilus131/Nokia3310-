@@ -3,43 +3,44 @@
   					public static void main(String[] args) {
      					Scanner input = new Scanner(System.in);
 				
-			   boolean start = true;
-			while(start){
+			
+			
+			while(true){
 	
 				String message = """
-	                
-                         My Nokia Menu Map:
-		         Enter any option bellow:
-                       
-                         1 - Phone  book
-                         2 - Messages
-                         3 - Chat
-                         4 - Call register
-                         5 - Tones
-                         6 - Settings
-                         7 - Call divert
-                         8 - Games
-                         9 - Calculator
-                         10 - Reminders
-                         11 - Clock
-                         12 - Profiles
-                         13 - Sim Service
-                      
-            		""";
+	                	
+			My Nokia Menu Map:
+		        Enter any option bellow:
+1 - Phone Book
+2 - Messages
+3 - Chat
+4 - Call register
+5 - Tones
+6 - Settings
+7 - Call divert
+8 - Games
+9 - Calculator
+10 - Reminders
+11 - Clock
+12 - Profiles
+13 - Sim Service
+0  - Exit
+                      		
+		""";
+
 		System.out.println(message);
 		System.out.print("enter a number to select: ");
 	        int number = input.nextInt();
-		
-
-	switch(number) {
+           
+         //while(ture){
+	switch(number) { 
+case 0: return;
 	               
-	case 1:
-			 boolean inPhoneBook = true;
-   			 while (inPhoneBook) {
+case 1:
 			
-			String phoneBook = """
-   
-           PhoneBook Menu
+		String phoneBook = """
+   		
+           <<<<PhoneBook Menu>>>>>
  
     1  - Search
     2  - Service Nos.
@@ -51,85 +52,87 @@
     8  - Option
     9  - Speed dials
     10 - Voice tags
-    0  - Back
-	
-  
+ 
+   	       
     """;
-	                
+	         
 			System.out.println(phoneBook);
 			System.out.print("enter a number to select: ");
 			int number2 = input.nextInt();
-			
 
 			switch(number2) {
-case 1:			    System.out.println("search");
-			      break;
+			case 0: return;
+			case 1: System.out.println("search");  break;
+			     
 			case 2:
-			    System.out.println("Service Nos.");
-			     break;
+			    System.out.println("Service Nos."); break;
+			   
 			case 3:
-			    System.out.println("Add name");
-			     break;
+			    System.out.println("Add Name"); break;
+			     
 			case 4:
-			    System.out.println("Erase");
-			     break;
+			    System.out.println("Erase");break;
+			     
 			case 5:
-			    System.out.println("Edit");
-			     break;
+			    System.out.println("Edit");  break;
+			    
 			case 6:
-			    System.out.println("Assign tone");
-			      break;
+			    System.out.println("Assign tone"); break;
+			      
 			case 8:
 				String message3 = """
    
-              		Options Menu
+              		<<<<Options Menu>>>>
  
-    			1 - Type of view
-   			2 - Memory status
+1 - Type of view
+2 - Memory status
 
     				""";
 
 			System.out.println(message3);
 			int number3 = input.nextInt();
-			switch(number3) {
+			
+			switch(number3) { 
+			case 0: return;
 			case 1:	
-			    System.out.println("Type of view");  break;
+			System.out.println("Type of view");  break;
 			   
 			case 2:
-			   System.out.println("Memory status"); break;
+			System.out.println("Memory status"); break;
 			   
 			default:
 			    break;
 			 }
 			    break;
 			case 9:
-			    System.out.println("Speed dials");
-			    break;
+			    System.out.println("Speed dials"); break;
+			   
 			case 10:
-			     System.out.println("Voice tags");
+			     System.out.println("Voice tags"); break;
+			    
+			default: System.out.println("Enter a valid number: ");
 			     break;
-	
-			default:
-			     break;
-			}}// closing bracet for loop
-			     break;
+			}
+			    
+			
+					 break;
+
 
 case 2:
 			  
 			String messageMenu = """
 
-           		 Messaging Menu
-
-   		        1  - Write messages
-    			2  - Inbox
-    			3  - Outbox
-    			4  - Picture messages
-    			5  - Templates
-   			6  - Smileys
-   	               	7  - Message settings
-   			8  - Info service
-    		        9  - Voice mailbox number
-    			10 - Service command editor
+           		 <<<<<<Messaging Menu>>>>>
+1  - Write messages
+2  - Inbox
+3  - Outbox
+4  - Picture messages
+5  - Templates
+6  - Smileys
+7  - Message settings
+8  - Info service
+9  - Voice mailbox number
+10 - Service command editor
  	
    				 """;
 				
@@ -138,62 +141,64 @@ case 2:
 			int number3 = input.nextInt();
 			
 			switch(number3) {
+			case 0: return;
 			case 1:
-			  System.out.println("Write messages: ");
-			    break;
+			  System.out.println("Write messages: ");   break;
+			  
 			case 2:
-			  System.out.println("Inbox ");
-			    break;
+			  System.out.println("Inbox: "); break;
+		
 			case 3:
-			  System.out.println("Outbox ");
-			    break;
+			  System.out.println("Outbox: "); break;
+			    
 			case 4:
-			  System.out.println("Picture message ");
-			    break;
+			  System.out.println("Picture Message: ");  break;
+			   
 			case 5:
-			  System.out.println("Templates ");
-			    break;
+			  System.out.println("Templates: ");    break;
+			 
 			case 6:
-			  System.out.println("Smileys ");
-			    break;
+			  System.out.println("Smileys: "); break;
+			    
 			case 7:
 			  
 			 String setting = """
 
-          Message Settings Menu
-  
-   				 1 - Set 1
-   				 2 - Common
+                      <<<<Message Settings Menu>>>>>
+ 1 - Set 1
+ 2 - Common
 
    				  """;
 			System.out.println(setting);
 			System.out.print("enter a number to select: ");
 			int number4 = input.nextInt();
-			switch(number4) {
 			
+			switch(number4) {
 			case 1:
 			String messageSetting = """
  
-          		Set one
+          		<<<Set one>>>
    
-    			1. Message center number
-   			2. Message sent as
-    			3. Message validity
+1. Message center number
+2. Message sent as
+3. Message validity
  
     			""";
+
 			System.out.println(messageSetting);
 			System.out.print("enter a number to select: ");
 			int number5 = input.nextInt();
 			
 			switch(number5) {
+			case 0: return;
 			case 1:
-			  System.out.println("Message center number");
+			  System.out.println("Message Center Number");
 			    break;
 			case 2:
-			   System.out.println("Messages sent as");
+			   System.out.println("Messages sent As: ");
 			    break;
 			case 3:
-			   System.out.println("Message validity");
+			   System.out.println("Message validity:");
 			    break;
 			default :
 			    break;
@@ -204,24 +209,24 @@ case 2:
 			case 2:
 			   String commonSetting = """
 
-        		Common Message Settings 
- 
-    			1. Delivery reports
-    			2. Reply via same centre
-   			 3. Character support
+        		<<<<Common Message Settings>>> 
+ 1. Delivery reports
+ 2. Reply via same centre
+ 3. Character support
   
    			 """;
 
 			System.out.println(commonSetting);
 			System.out.print("enter a number to select: ");
 			int number6 = input.nextInt();
-	                switch(number6) {
+	                
+			switch(number6) {
 			 case 1:
-			      System.out.println("Delivery reports");
-			      break;
+			      System.out.println("Delivery reports");break;
+			     
 			case 2:
-			     System.out.println("Reply via same centre");
-			      break;
+			     System.out.println("Reply via same centre");break;
+			      
 			case 3:
 			     System.out.println("Character Support");
 		             break;
@@ -234,14 +239,13 @@ case 2:
 			}
 			      break;
 			case 8:
-			System.out.println("info service");
-			      break;
+			System.out.println("info service");   break;
+			    
 			case 9:
-			System.out.println("Voice mailbox number");
-			       break;
+			System.out.println("Voice mailbox number");break;
+			      
 			case 10:
-			System.out.println("Service command editor");
-			       break;
+			System.out.println("Service command editor"); break;
 			default:
 			       break;
                         }
@@ -249,29 +253,43 @@ case 2:
 
 
 
-case 3:
-			System.out.print(" chat ");
-			        break;
+case 3:	               
+			System.out.println("""
+   					<<< CHART<<<
+   					 Back 0
+					""");
+
+		int chatInput = input.nextInt();  
+                            
+			switch (chatInput) {
+   	 	        //case 0: continue message;
+    			default: System.out.println("Enter a valid number"); break;
+        	
+				}
+
+
+
 case 4:
 			 
 			String callMenu = """
    
-           		 Call Register Menu
- 
-    			1 - Missed call
-   			2 - Received call
-    			3 - Dialled numbers
-    			4 - Erase recent call lists
-    			5 - Show call duration
-    			6 - Show call cost
-    			7 - Call cost settings
-    			8 - Prepaid credit
+           		 <<<<Call Register Menu>>>>
+1 - Missed call
+2 - Received call
+3 - Dialled numbers
+4 - Erase recent call lists
+5 - Show call duration
+6 - Show call cost
+7 - Call cost settings
+8 - Prepaid credit
   
     			"""; 
 			System.out.println(callMenu);
 			System.out.print("enter a number to select: ");
 			int number7 = input.nextInt();
-	                switch(number7) {
+	               
+
+			 switch(number7) {
 			  case 1:
                              System.out.println("Missed call");
 			      break;
@@ -285,23 +303,23 @@ case 4:
 			     System.out.println("Erase recent call list");
 			      break;
 		           
-				case 5:
+			   case 5:
 			
 			 String callDuration = """
    
-          		 Call Duration Menu
-
-    			1 - Last call duration
-   			2 - All calls duration
-   			3 - Received calls duration
-   			4 - Dialled calls duration
-    			5 - Clear timers
+          		 <<<<Call Duration Menu>>>>
+1 - Last call duration
+2 - All calls duration
+3 - Received calls duration
+4 - Dialled calls duration
+5 - Clear timers
  
     			""";
 				System.out.println(callDuration);
 			System.out.print("enter a number to select: ");
 			int number8 = input.nextInt();
-	                switch(number8) {
+	                
+                        switch(number8) {
 			case 1: 
                        System.out.println("Last call duration");
 			  break;
@@ -324,16 +342,16 @@ case 4:
 			case 6:
   			String costMenu = """
   
-         		 Show All Cost Menu
-  
-    				1 - Last call cost
-   				2 - All calls cost
-    				3 - Clear counters
+         		 <<<<Show All Cost Menu>>>
+1 - Last call cost
+2 - All calls cost
+3 - Clear counters
  
   			 		 """;
 			System.out.println(costMenu);
 			System.out.print("enter a number to select: ");
 			int number9 = input.nextInt();
+			
 			switch(number9) {
 			case 1:
                             System.out.println("Last call cost");
@@ -352,10 +370,9 @@ case 4:
 			
 			String CallcostSet = """
    
-        		 Call Cost Settings
-  
-    			1 - Call cost limit
-    			2 - Show cost in
+        		 <<<Call Cost Settings>>>
+1 - Call cost limit
+2 - Show cost in
 
    				 """;
 
@@ -385,17 +402,17 @@ case 5:
 
 			String tonesMenu = """
 
-          		 Tones Settings Menu
+          		 <<<<Tones Settings Menu>>>>>
   
-    			1 - Ringing tone
-    			2 - Ringing volume
-    			3 - Incoming call alert
-    			4 - Composer
-    			5 - Message alert tone
-    			6 - Keypad tones
-    			7 - Warning and game tones
-    			8 - Vibrating alert
-    			9 - Screen saver
+1 - Ringing tone
+2 - Ringing volume
+3 - Incoming call alert
+4 - Composer
+5 - Message alert tone
+6 - Keypad tones
+7 - Warning and game tones
+8 - Vibrating alert
+9 - Screen saver
    
    			 """;
 			System.out.println(tonesMenu);
@@ -439,12 +456,11 @@ case 6:
 				
 				String setingMenu = """
    
-              Settings Menu: 
-  
-   				 1 - Call settings
-   				 2 - Phone settings
-    				 3 - Security settings
-   				 4 - Restore factory settings
+              			<<<Settings Menu>>>: 
+  1 - Call settings
+  2 - Phone settings
+  3 - Security settings
+  4 - Restore factory settings
   
    				 """;
 
@@ -456,14 +472,14 @@ case 6:
                           
 			  String cllSetting = """
  
-            		Call Settings
+            		<<<Call Settings>>>
   
-    			1 - Automatic redial
-    			2 - Speed dialing
-   			 3 - Call waiting options
-    			4 - Own number sending
-    			5 - Phone line in use
-    			6 - Automatic answer
+1 - Automatic redial
+2 - Speed dialing
+3 - Call waiting options
+4 - Own number sending
+5 - Phone line in use
+6 - Automatic answer
   
     			""";
 
@@ -497,14 +513,14 @@ case 6:
 			case 2:
 			String phnSetting = """
   
-           		Phone Settings
+           		<<<Phone Settings>>>
     
-    			1 - Language
-    			2 - Cell info display
-    			3 - Welcome note
-    			4 - Network selection
-    			5 - Lights
-    			6 - Confirm SIM service action
+1 - Language
+2 - Cell info display
+3 - Welcome note
+4 - Network selection
+5 - Lights
+6 - Confirm SIM service action
   
    			 """;
 
@@ -537,20 +553,21 @@ case 6:
 		case 3:
 		        
 			String security = """
-            		 Security Settings
-   
-   			1 - Pin code request
-   			2 - Call barring service
-    			3 - Fixed dialing
-    			4 - Closed user group
-    			5 - Phone security
-    			6 - Change access codes
+            		 <<<Security Settings>>>
+
+1 - Pin code request
+2 - Call barring service
+3 - Fixed dialing
+4 - Closed user group
+5 - Phone security
+6 - Change access codes
   
    				 """;
 
 			System.out.println(security);
 			System.out.print("enter a number to select: ");
 			int number15 = input.nextInt();
+			
 			switch(number15) {
 			case 1: 
    			System.out.println("PIN code request"); break;
@@ -598,14 +615,14 @@ case 11:
 		       
 			String clock = """
   
-             			CLOCK MENU
-  
-    				1 - Alarm clock
-   				2 - Clock settings
-    				3 - Date setting
-    				4 - Stopwatch
-   				5 - Countdown timer
-   				6 - Auto update of date and time
+             			<<<CLOCK MENU>>>
+
+1 - Alarm clock
+2 - Clock settings
+3 - Date setting
+4 - Stopwatch
+5 - Countdown timer
+6 - Auto update of date and time
 
    				 """;
 
@@ -641,13 +658,12 @@ case 12:
 case 13:
 			System.out.println("Sim services");  break; 
 			 
-			default:
+default: System.out.print("Enter a valid number: ");
 			break;                       
                         }
 
-
-
-			}// closing bracket for the while loop
+	}
+			
 }
 }
 
