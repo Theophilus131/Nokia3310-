@@ -652,15 +652,34 @@ case 11:
 			break;
 			}
 			  break;
+
+
+
 case 12:
 			System.out.println("Profiles");   break;
 			
-case 13:     
+case 13:     { // open case 13
+			while(true){ // loop open for sim service menu
 
-		System.out.println("Sim services"); break;
-			default: System.out.print("Enter a valid number: ");
+		System.out.println("""
+		<<<Sim services >>>
+			0 - Back
+
+		""");
+			int simInput = input.nextInt();
+			if(simInput == 0) break;// go back to main menu
+				
+                           else { System.out.println("invalid number. enter 0 to go back");
+					}
+				break;
 			                       
-                        }
+                    
+			    }// while loop closing
+		
+			} // closing case 13
+
+}
+
 
 	}// parent while loop closing 
 			
