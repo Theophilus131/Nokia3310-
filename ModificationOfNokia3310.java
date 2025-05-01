@@ -598,21 +598,60 @@ case 6:
 			break;
 			}
 			  break;
-			case 7:
-			System.out.println("Call Divert");  break;
+
+case 7: 		while(true){
+			System.out.println("""
+			<<<Call Divert>>>
+			0 - Back
+
+				""");
+			int callDivert = input.nextInt();
+			if(callDivert == 0) break;
+			else{ System.out.println("invalid . enter 0 to go back ");
+                              } 
+					}// call diver loop close
+				break;
 			
-			case 8:
-		        System.out.println("Games");  break;
-			  
-			case 9:
-		        System.out.println("Calculator");  break;
-			 
-			case 10:
-		        System.out.println("Reminders");   break;
+case 8:			
+			while(true){
+ 			System.out.println("""
+			<<<Games>>>
+			 0 - Back
+						""");  
+				int games = input.nextInt();
+				if(games == 0) break;
+                             else { System.out.println("invalid number. enter 0 to go back ");
+					} 
+						}// loop games close
+						break;
+		          
+case 9: 		while(true){
+		System.out.println("""
+			<<<Calculator>>>
+			0 - back
+			""");  
+			int calculator = input.nextInt();
+			if(calculator == 0)break;
+			else{System.out.println("invalid number. enter 0 to go back");
+				}
+					}// loop close for calculator
+						break;
+		         
+case 10:  		while(true){
+			System.out.println("""
+				<<<Reminders>>>
+				0 - back
+				"""); 
+				int reminder = input.nextInt();
+				if(reminder == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+						}// loop closing for reminder
+					  break;
+		       
 			
 
 case 11:
-		       
+		       while(true){ 
 			String clock = """
   
              			<<<CLOCK MENU>>>
@@ -623,34 +662,35 @@ case 11:
 4 - Stopwatch
 5 - Countdown timer
 6 - Auto update of date and time
+0 - Back
 
    				 """;
 
 			System.out.println(clock);
 			System.out.print("enter a number to select: ");
 			int number16 = input.nextInt();
+			
+			if(number16 == 0)break;
+
+
 			switch(number16) {
-			case 1:
-                         System.out.println("Alarm clock");  break;
+			case 1: System.out.println("Alarm clock");  break;
+                    
+			case 2: System.out.println("Clock settings"); break;
+                         
+			case 3: System.out.println("Date setting");  break;
+                        
+			case 4: System.out.println("Stopwatch");   break;
+                         
+			case 5: System.out.println("Countdown timer");  break;
 			  
-			case 2:
-                         System.out.println("Clock settings"); break;
-			   
-			case 3:
-                         System.out.println("Date setting");  break;
-			  
-			case 4:
-                         System.out.println("Stopwatch");   break;
+			case 6: System.out.println("Auto update of date and time");   break;
 			 
-			case 5:
-                         System.out.println("Countdown timer");  break;
-			  
-			case 6:
-                         System.out.println("Auto update of date and time");
-			   break;
-			default:
+			default: System.out.println("invalid number ");
 			break;
-			}
+					
+					}// switch closing  
+				} // loop closing
 			  break;
 
 
