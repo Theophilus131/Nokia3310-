@@ -32,12 +32,15 @@
 		System.out.print("enter a number to select: ");
 	        int number = input.nextInt();
            
-         //while(ture){
-	switch(number) { 
-case 0: return;
+         
+	switch(number) { // openig loop switch 1
+case 0:
+                   System.out.println("Exiting... ");
+                    return;
+
 	               
 case 1:
-			
+		while(true){	
 		String phoneBook = """
    		
            <<<<PhoneBook Menu>>>>>
@@ -52,72 +55,67 @@ case 1:
     8  - Option
     9  - Speed dials
     10 - Voice tags
- 
+     0 - Back to main manu
    	       
     """;
 	         
 			System.out.println(phoneBook);
 			System.out.print("enter a number to select: ");
 			int number2 = input.nextInt();
+			
+			if(number2 == 0) break;  // go bact to main menu
 
 			switch(number2) {
-			case 0: return;
 			case 1: System.out.println("search");  break;
 			     
-			case 2:
-			    System.out.println("Service Nos."); break;
+			case 2: System.out.println("Service Nos."); break; 
 			   
-			case 3:
-			    System.out.println("Add Name"); break;
-			     
-			case 4:
-			    System.out.println("Erase");break;
-			     
-			case 5:
-			    System.out.println("Edit");  break;
+			case 3: System.out.println("Add Name"); break;
 			    
-			case 6:
-			    System.out.println("Assign tone"); break;
-			      
+			case 4:  System.out.println("Erase");break;
+			       
+			case 5: System.out.println("Edit");  break;
+			       
+			case 6:  System.out.println("Assign tone"); break;
+			       
 			case 8:
+				while(true){// options sub menu loop start
 				String message3 = """
    
               		<<<<Options Menu>>>>
  
 1 - Type of view
 2 - Memory status
+0 - Back to phone book menu
 
     				""";
 
 			System.out.println(message3);
 			int number3 = input.nextInt();
 			
-			switch(number3) { 
-			case 0: return;
-			case 1:	
-			System.out.println("Type of view");  break;
-			   
-			case 2:
-			System.out.println("Memory status"); break;
-			   
-			default:
-			    break;
-			 }
-			    break;
-			case 9:
-			    System.out.println("Speed dials"); break;
-			   
-			case 10:
-			     System.out.println("Voice tags"); break;
-			    
-			default: System.out.println("Enter a valid number: ");
-			     break;
-			}
-			    
+                      if(number3 == 0)break;
 			
+			switch(number3) { 
+			case 1:	System.out.println("Type of view");  break;
+			
+			case 2: System.out.println("Memory status"); break;
+			   
+			default: System.out.println("invalid option"); break;
+			    
+			 }
+				} // options sub menu loop ends
+			    break;
+
+			case 9:  System.out.println("Speed dials"); break;
+			   
+			case 10: System.out.println("Voice tags"); break;
+			        
+			default: System.out.println("Enter a valid number: "); break;
+			     
+			}
+			   } //closing of while loop
 					 break;
-
-
+						
 case 2:
 			  
 			String messageMenu = """
@@ -133,13 +131,15 @@ case 2:
 8  - Info service
 9  - Voice mailbox number
 10 - Service command editor
+ 0 - Back to main menu
  	
    				 """;
 				
 			System.out.println(messageMenu);
 			System.out.print("enter a number to select: ");
 			int number3 = input.nextInt();
-			
+			if(number3 == 0) break;
+
 			switch(number3) {
 			case 0: return;
 			case 1:
@@ -655,14 +655,14 @@ case 11:
 case 12:
 			System.out.println("Profiles");   break;
 			
-case 13:
-			System.out.println("Sim services");  break; 
-			 
-default: System.out.print("Enter a valid number: ");
-			break;                       
+case 13:     
+
+		System.out.println("Sim services"); break;
+			default: System.out.print("Enter a valid number: ");
+			                       
                         }
 
-	}
+	}// parent while loop closing 
 			
 }
 }
