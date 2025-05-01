@@ -656,10 +656,23 @@ case 11:
 
 
 case 12:
-			System.out.println("Profiles");   break;
+			while(true){ // profiles open loop
+			System.out.println("""
+			<<<Profiles>>>
+			      0 - Back
+					"""); 
+				int profile = input.nextInt();
+				if(profile == 0) break;
+				else{System.out.println("invalid number enter 0 to go back");
+						}
+				   break;
+						}// loop close
+
+				
 			
-case 13:     { // open case 13
-			while(true){ // loop open for sim service menu
+case 13:     
+
+		while(true){ // loop open for sim service menu
 
 		System.out.println("""
 		<<<Sim services >>>
@@ -678,7 +691,7 @@ case 13:     { // open case 13
 		
 			} // closing case 13
 
-}
+
 
 
 	}// parent while loop closing 
