@@ -63,20 +63,80 @@ case 1:
 			System.out.print("enter a number to select: ");
 			int number2 = input.nextInt();
 			
-			if(number2 == 0) break;  // go bact to main menu
+			if(number2 == 0) break;					
 
 			switch(number2) {
-			case 1: System.out.println("search");  break;
+			case 1: System.out.println("""
+				<<<search>>>
+				0 - back
+
+					"""); 
+				int search = input.nextInt();
+				if(search == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+						
+				 break;
+
+
 			     
-			case 2: System.out.println("Service Nos."); break; 
+			case 2: System.out.println("""
+					<<<Service Nos.>>>
+					0 - Back
+					"""); 
+				int serviceNo = input.nextInt();
+				if(serviceNo == 0) break;
+				else{System.out.println("invalid number enter 0 to go back");}
+				break; 
 			   
-			case 3: System.out.println("Add Name"); break;
+			case 3: System.out.println("""
+					<<<Add Name>>>
+					0 - Back
+						"""); 
+				int nameAdd = input.nextInt();
+				if(nameAdd == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+
+					break;
 			    
-			case 4:  System.out.println("Erase");break;
+			case 4:  System.out.println("""
+					<<<Erase>>>
+					0 - Back
+					""");
+				int erase = input.nextInt();
+				if(erase == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+
+
+				break;
 			       
-			case 5: System.out.println("Edit");  break;
+			case 5: System.out.println("""
+						<<<Edit>>>
+						0 - Back
+						""");  
+				int edit = input.nextInt();
+				if(edit == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+					break;
+
 			       
-			case 6:  System.out.println("Assign tone"); break;
+			case 6:  System.out.println("""
+
+				<<<Assign tone>>>
+					0 - Back
+				"""); 
+				int assign = input.nextInt();
+				if(assign == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+					break;
+			case 7: System.out.println("""
+						<<<Send b'card>>>
+						0- Back
+						""");
+					int sndCard = input.nextInt();
+					if(sndCard == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+					break;
+
 			       
 			case 8:
 				while(true){// options sub menu loop start
@@ -94,11 +154,29 @@ case 1:
 			int number3 = input.nextInt();
 			
                       if(number3 == 0)break;
-			
+
 			switch(number3) { 
-			case 1:	System.out.println("Type of view");  break;
+			case 1:	System.out.println("""
+					<<<Type of view>>>
+						0 - Back
+					""");  
+				int typeView = input.nextInt();
+				if(typeView == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+					
+						break;
+
+				
 			
-			case 2: System.out.println("Memory status"); break;
+			case 2: System.out.println("""
+
+			<<<Memory status>>>
+				0 - Back
+				""");
+				int status = input.nextInt(); 
+			if(status == 0)break;
+			else{System.out.println("invalid number enter 0 to go back");}
+					break;
 			   
 			default: System.out.println("invalid option"); break;
 			    
@@ -106,9 +184,25 @@ case 1:
 				} // options sub menu loop ends
 			    break;
 
-			case 9:  System.out.println("Speed dials"); break;
+			case 9:  System.out.println("""
+					<<<Speed dials>>>
+					0 - Back
+					"""); 
+				int speed = input.nextInt();
+				if(speed == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+					break;
 			   
-			case 10: System.out.println("Voice tags"); break;
+			case 10: System.out.println("""
+					<<<Voice tags>>>
+					0 - Back			
+					""");
+
+				int tags = input.nextInt(); 
+				if(tags == 0)break;
+				else{System.out.println("invalid number enter 0 to go back");}
+				
+					break;
 			        
 			default: System.out.println("Enter a valid number: "); break;
 			     
@@ -141,7 +235,7 @@ case 2:
 			if(number3 == 0) break;
 
 			switch(number3) {
-			case 0: return;
+	
 			case 1:
 			  System.out.println("Write messages: ");   break;
 			  
@@ -253,21 +347,18 @@ case 2:
 
 
 
-case 3:	               
+case 3:	                while(true){
 			System.out.println("""
    					<<< CHART<<<
-   					 Back 0
+   					0 - Back 
 					""");
 
 		int chatInput = input.nextInt();  
-                            
-			switch (chatInput) {
-   	 	        //case 0: continue message;
-    			default: System.out.println("Enter a valid number"); break;
-        	
-				}
+                 if(chatInput==0)break;
+		else{System.out.println("Invalid number enter 0 to go back");}
 
-
+			}// while loop closing
+				break;
 
 case 4:
 			 
