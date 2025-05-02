@@ -561,7 +561,7 @@ case 4:
 			break;
 			
 case 5:  
-
+			
 			String tonesMenu = """
 
           		 <<<<Tones Settings Menu>>>>>
@@ -581,6 +581,10 @@ case 5:
 			System.out.println(tonesMenu);
 			System.out.print("enter a number to select: ");
 			int number11 = input.nextInt();
+			 if(number11 == 0) break;
+
+
+
 			switch(number11) {
 			
 	case 1: 
@@ -608,12 +612,36 @@ case 5:
 	
 				break;
 			
-			case 7: System.out.println("Warning and game tones"); break;
+			case 7: System.out.println("""
+				<<<Warning and game tones>>>
+					0 - Back
+					""");
+				int warning = input.nextInt();
+				if(warning == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				 break;
 			
-			case 8:System.out.println("Vibrating alert"); break;
+			case 8:System.out.println("""
+				<<<Vibrating alert>>>
+					0 - Back
+				"""); 
+				int vibrating = input.nextInt();
+				if(vibrating == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
 			
-			case 9:
-			System.out.println("Screen saver");
+			case 9: System.out.println("""
+				<<<Screen saver>>>
+				0 - Back
+				""");
+			       int saver = input.nextInt();
+				if(saver == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
 			break;
 			default:
 			break;
@@ -630,12 +658,15 @@ case 6:
   2 - Phone settings
   3 - Security settings
   4 - Restore factory settings
+  0 - Back
   
    				 """;
 
 				System.out.println(setingMenu);
 			System.out.print("enter a number to select: ");
 			int number12 = input.nextInt();
+			if(number12 == 0)break;
+
 			switch(number12) {
 			case 1:
                           
@@ -649,37 +680,79 @@ case 6:
 4 - Own number sending
 5 - Phone line in use
 6 - Automatic answer
+0 - Back
   
     			""";
 
 			System.out.println(cllSetting);
 			System.out.print("enter a number to select: ");
 			int number13 = input.nextInt();
+				if(number13== 0)break;
+
 			switch(number13) {
-			  case 1: 
-				System.out.println("Automatic redial");
+			  case 1: System.out.println("""
+					<<<Automatic redial>>>	
+					0 - Back
+					""");
+				   int automatic = input.nextInt();
+				    if(automatic == 0) break;
+					else{System.out.println("Invalid number enter 0 to go back");}
+					 break;
+				
+			  case 2: System.out.println("""
+  					<<<Speed dialing>>>
+					0 - Back
+					"""); 
+				   int dailing = input.nextInt();
+				    if(dailing == 0) break;
+					else{System.out.println("Invalid number enter 0 to go back");}
+
 				break;
-			  case 2:
-				System.out.println("Speed dialing");
+			  
+			  case 3:System.out.println("""
+					<<<Call waiting options>>>
+					   0 - Back
+					""");
+				  int callWaiting = input.nextInt();
+				    if(callWaiting == 0) break;
+					else{System.out.println("Invalid number enter 0 to go back");}
+
 				break;
-			  case 3:
-				System.out.println("Call waiting options");
+
+			  case 4:System.out.println("""
+					<<<Own number sending>>>
+					0 - Back
+					"""); 
+					int snding = input.nextInt();
+				    if(snding == 0) break;
+					else{System.out.println("Invalid number enter 0 to go back");}
+
+					break;
+
+			  case 5:System.out.println("""
+						<<<phone line in use>>>
+						0 - Back
+						""");
+					int line = input.nextInt();
+				    if(line == 0) break;
+					else{System.out.println("Invalid number enter 0 to go back");}
+
 				break;
-			  case 4:
-				System.out.println("Own number sending");
-				break;
-			  case 5:
-				System.out.println("phone line in use");
-				break;
-			  case 6:
-				System.out.println("Automatic answer");
+			  case 6:System.out.println("""
+					<<<Automatic answer>>>
+					0 - Back
+						""");
+				int answer = input.nextInt();
+				if(answer == 0) break;
+				else{System.out.println("Invalid number enter 0 to go back");}
+
 				break;
 			  default:
 				 break;
 			  }
 			  break;
 		        
-			case 2:
+			case 2:  while(true){ // loop opening
 			String phnSetting = """
   
            		<<<Phone Settings>>>
@@ -690,32 +763,81 @@ case 6:
 4 - Network selection
 5 - Lights
 6 - Confirm SIM service action
+0 - Back
   
    			 """;
 
 			System.out.println(phnSetting);
 			System.out.print("enter a number to select: ");
 			int number14 = input.nextInt();
+			if(number14 == 0) break;
+
 			switch(number14) {
-			case 1: 
-			  System.out.println("Language"); break;
+			case 1:  System.out.println("""
+					<<<Language>>>
+					0 - Back
+					""");
+				int language = input.nextInt();
+				if(language == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				 break;
 			  
-			case 2:
-			System.out.println("Cell info display"); break;
+			case 2: System.out.println("""
+					<<<Cell info display>>>
+						0 - Back
+						"""); 
+				int info = input.nextInt();
+				if(info == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+					break;
 			   
-			case 3:
-			System.out.println("Welcome note");   break;
+			case 3:System.out.println("""
+					<<<Welcome note>>>
+					0 - Back
+					""");  
+				int note = input.nextInt();
+				if(note == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				 break;
 			 
-			case 4:
-			System.out.println("Network selection"); break;
+			case 4:System.out.println("""
+				<<<Network selection>>>
+					0 - Back
+					"""); 
+				int selection = input.nextInt();
+				if(selection == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+					break;
 			  
-			case 5:
-			System.out.println("Lights");  break;
+			case 5: System.out.println("""
+					<<<Lights>>>
+					0 - Back
+					""");  
+				int lights = input.nextInt();
+				if(lights == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
 			  
-			case 6:
-			System.out.println("Confirm SIM service action"); break;  
-			default:
-			break;
+			case 6: System.out.println("""
+				<<<Confirm SIM service action>>>
+					0 - Back
+				"""); 
+				int confirm = input.nextInt();
+				if(confirm == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+						}// loop closing
+				break;  
+			
 			}
 			break;
 			
@@ -730,31 +852,81 @@ case 6:
 4 - Closed user group
 5 - Phone security
 6 - Change access codes
+0 - Back
   
    				 """;
 
 			System.out.println(security);
 			System.out.print("enter a number to select: ");
 			int number15 = input.nextInt();
-			
+			if(number15 == 0) break;
+
+
 			switch(number15) {
-			case 1: 
-   			System.out.println("PIN code request"); break;
+			case 1: System.out.println("""
+				<<<PIN code request>>>
+					0 - Back
+				"""); 
+				int code = input.nextInt();
+				if(code == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+
+
+					break;
 			  
-			case 2: 
-   			System.out.println("Call Baring Service");  break;
+			case 2: System.out.println("""
+				<<<Call Baring Service>>>
+					0 - Back
+				""");  
+				int baring = input.nextInt();
+				if(baring == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				break;
 			 
-			case 3: 
-   			System.out.println("Fixed dialing");  break;
+			case 3:  System.out.println("""
+				<<<Fixed dialing>>>
+					0 - Back
+				""");  
+				int fixed = input.nextInt();
+				if(fixed == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
 			 
-		        case 4: 
-   			System.out.println("Closed user group");   break;
+		        case 4: System.out.println("""
+				<<<Closed user group>>>
+					0 - Back
+				""");   
+				int user = input.nextInt();
+				if(user == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
 			
-		        case 5: 
-   			System.out.println("Phone security");  break;
+		        case 5: System.out.println("""
+				<<<Phone security>>>
+				0 - Back
+				""");  
+				int secu = input.nextInt();
+				if(secu == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
 			 
-		        case 6: 
-   			System.out.println("Change access codes");   break;
+		        case 6: System.out.println("""
+				<<<Change access codes>>>
+					0 - Back
+					""");   
+				int access = input.nextInt();
+				if(access == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
 			
 			default:
 			  break;
