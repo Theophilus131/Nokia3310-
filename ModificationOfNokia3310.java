@@ -66,7 +66,9 @@ case 1:
 			if(number2 == 0) break;					
 
 			switch(number2) {
-			case 1: System.out.println("""
+			case 1: 
+				while(true){
+				System.out.println("""
 				<<<search>>>
 				0 - back
 
@@ -74,31 +76,37 @@ case 1:
 				int search = input.nextInt();
 				if(search == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
-						
+					}// loop closing	
 				 break;
 
 
 			     
-			case 2: System.out.println("""
+			case 2: 
+					while(true){
+				System.out.println("""
 					<<<Service Nos.>>>
 					0 - Back
 					"""); 
 				int serviceNo = input.nextInt();
 				if(serviceNo == 0) break;
 				else{System.out.println("invalid number enter 0 to go back");}
-				break; 
+						}// looping closing
+
+					break; 
 			   
-			case 3: System.out.println("""
+			case 3: while(true){
+					System.out.println("""
 					<<<Add Name>>>
 					0 - Back
 						"""); 
 				int nameAdd = input.nextInt();
 				if(nameAdd == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
-
+						}// loop close case 3
 					break;
 			    
-			case 4:  System.out.println("""
+			case 4:  while(true){
+					System.out.println("""
 					<<<Erase>>>
 					0 - Back
 					""");
@@ -106,20 +114,24 @@ case 1:
 				if(erase == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
 
-
+					}// loop close
 				break;
 			       
-			case 5: System.out.println("""
+			case 5:     while(true){
+					System.out.println("""
 						<<<Edit>>>
 						0 - Back
 						""");  
 				int edit = input.nextInt();
 				if(edit == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
-					break;
+					
+						}// loop closing
+						break;
 
 			       
-			case 6:  System.out.println("""
+			case 6:    while(true){
+				System.out.println("""
 
 				<<<Assign tone>>>
 					0 - Back
@@ -127,15 +139,20 @@ case 1:
 				int assign = input.nextInt();
 				if(assign == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
+					 }// looping closing
 					break;
-			case 7: System.out.println("""
+
+			case 7:        while(true){
+
+						System.out.println("""
 						<<<Send b'card>>>
 						0- Back
 						""");
 					int sndCard = input.nextInt();
 					if(sndCard == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
-					break;
+							}// closing loop
+						break;
 
 			       
 			case 8:
@@ -156,44 +173,49 @@ case 1:
                       if(number3 == 0)break;
 
 			switch(number3) { 
-			case 1:	System.out.println("""
+			case 1:
+					while(true){
+					System.out.println("""
 					<<<Type of view>>>
 						0 - Back
 					""");  
 				int typeView = input.nextInt();
 				if(typeView == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
-					
+							}//closing loop
 						break;
 
 				
 			
-			case 2: System.out.println("""
+			case 2:  while(true){
+				System.out.println("""
 
 			<<<Memory status>>>
 				0 - Back
 				""");
-				int status = input.nextInt(); 
+			int status = input.nextInt(); 
 			if(status == 0)break;
 			else{System.out.println("invalid number enter 0 to go back");}
+					}
 					break;
-			   
-			default: System.out.println("invalid option"); break;
 			    
 			 }
 				} // options sub menu loop ends
 			    break;
 
-			case 9:  System.out.println("""
+			case 9:  while(true){
+					System.out.println("""
 					<<<Speed dials>>>
 					0 - Back
 					"""); 
 				int speed = input.nextInt();
 				if(speed == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
+					}// closing loop
 					break;
 			   
-			case 10: System.out.println("""
+			case 10:      while(true){
+					System.out.println("""
 					<<<Voice tags>>>
 					0 - Back			
 					""");
@@ -201,10 +223,9 @@ case 1:
 				int tags = input.nextInt(); 
 				if(tags == 0)break;
 				else{System.out.println("invalid number enter 0 to go back");}
-				
+				}// closing loop
 					break;
-			        
-			default: System.out.println("Enter a valid number: "); break;
+			    
 			     
 			}
 			   } //closing of while loop
@@ -236,27 +257,31 @@ case 2:
 
 			switch(number3) {
 	
-			case 1:  System.out.println("""
+			case 1:  while(true){
+				System.out.println("""
 				<<<Write messages>>> 
 				0 - Back
 					""");  
 				int write = input.nextInt();
 				if(write == 0)break;
 				else{System.out.println("invalid number enter 0  to go back ");}
-	
+						}
 				 break;
 			  
-			case 2: System.out.println("""
+			case 2: 
+					while(true){
+				System.out.println("""
 				<<<Inbox>>> 
 				0 - Back
 				"""); 		
 				int inbox = input.nextInt();
 				if(inbox == 0)break;
 				else{System.out.println("invalid number enter 0  to go back ");}
-
+						}
 				break;
 		
-			case 3: System.out.println("""
+			case 3:   while(true){
+				System.out.println("""
 				<<<Outbox>>> 
 				0 - Back
 				""");		
@@ -264,10 +289,11 @@ case 2:
 			int outbox = input.nextInt();
 			if(outbox == 0)break;
 			else{System.out.println("invalid number enter 0  to go back ");}
-
+					}
 				 break;
 			    
-			case 4: System.out.println(""" 
+			case 4:  while(true){
+				System.out.println(""" 
 				<<<Picture Message>>> 
 				0  - Back
 				 """); 
@@ -275,20 +301,22 @@ case 2:
 				int pic = input.nextInt();
 				if(pic == 0)break;
 				else{System.out.println("invalid number enter 0  to go back ");}
-	
+						}
 				 break;
 			   
-			case 5: System.out.println(""" 
+			case 5:   while(true){
+				System.out.println(""" 
 				<<<Templates>>>
 				0 - Back
 					 """);   
 				int template = input.nextInt();
 				if(template == 0)break;
 				else{System.out.println("invalid number enter 0  to go back ");}
-
+						}
 				 break;
 			 
-			case 6: System.out.println("""
+			case 6:		while(true){
+					 System.out.println("""
 					<<<Smileys>>>
 					0 - Back
 
@@ -296,7 +324,7 @@ case 2:
 				int smiley = input.nextInt();
 				if( smiley == 0)break;
 				else{System.out.println("invalid number enter 0  to go back ");}
-
+						}
 				break;
 			    
 			case 7:
@@ -313,12 +341,11 @@ case 2:
 			System.out.print("enter a number to select: ");
 			int number4 = input.nextInt();
 			if(number4 == 0)break;
-			else{System.out.println("invalid number enter 0  to go back ");}
-
+			
 					
 
 			switch(number4) {
-			case 1:
+			case 1: 
 			String messageSetting = """
  
           		<<<Set one>>>
@@ -334,7 +361,7 @@ case 2:
 			System.out.print("enter a number to select: ");
 			int number5 = input.nextInt();
 			if(number5 == 0)break;
-			else{System.out.println("invalid number enter 0  to go back ");}
+	
 				
 			
 			switch(number5) {
@@ -370,7 +397,7 @@ case 2:
 				break;
 			
 
-			case 2:
+			case 2: 
 			   String commonSetting = """
 
         		<<<<Common Message Settings>>> 
@@ -387,12 +414,35 @@ case 2:
 	                if(number == 0)break;
 
 			switch(number6) {
-			 case 1: System.out.println("Delivery reports");break;
+			 case 1: System.out.println("""
+				<<<Delivery reports>>>
+				 0 -Back
+				""");
+				int reports = input.nextInt();
+				if(reports == 0) break;
+				else{System.out.println("Invalid number enter 0 to go back");}
+
+ 				break;
 			     
-			case 2: System.out.println("Reply via same centre");break;
+			case 2: System.out.println("""
+				<<<Reply via same centre>>>
+				  0 - Back
+					""");
+				int via = input.nextInt();
+				if(via == 0) break;
+				else{System.out.println("Invalid number enter 0 to go back");}
+
+					break;
 			      
-			case 3: System.out.println("Character Support");
-		            
+			case 3: System.out.println("""
+					<<<Character Support>>>
+					0 - Back
+					""");
+		            int support = input.nextInt();
+			    if(support == 0) break;
+			    else{System.out.println("Invalid number enter 0 to go back");}
+
+
 			 break;
 		        default:
 			     break;
@@ -403,13 +453,44 @@ case 2:
 			}
 			      break;
 
-			case 8: System.out.println("info service");   break;
+			case 8: System.out.println("""
+					<<<info service>>>
+					0 - Back
+					""");  
+				int info = input.nextInt();
+				if(info == 0) break;
+				else{System.out.println("Invalid number enter 0 to go back");}
+
+					 break;
 			    
-			case 9: System.out.println("Voice mailbox number");break;
-			      
-			case 10: System.out.println("Service command editor"); break;
+			case 9: System.out.println("""
+				<<<Voice mailbox number>>>
+ 					0 - Back
+					""");
+				
+				int mailbox = input.nextInt();
+				if(mailbox == 0) break;
+				else{System.out.println("Invalid number enter 0 to go back");}
+
+
+				break;
+			                 
+			case 10: 
+					while(true){
+				System.out.println("""
+							
+				<<<Service command editor>>>
+						0 - Back
+						""");
+				int command = input.nextInt();
+				if(command == 0) break;
+				else{System.out.println("Invalid number enter 0 to go back");}
+						}// loop closing for service command
+
+
+				 break;
 			
-				default:
+				default: System.out.print("invalid");
 			       break;
                         }
 			      
@@ -1015,6 +1096,7 @@ case 11:
 
 
 			switch(number16) {
+				
 			case 1: System.out.println("""
 				<<<Alarm clock>>>
 				0 - Back
@@ -1022,7 +1104,7 @@ case 11:
 			int alarm = input.nextInt();
 			if(alarm == 0)break;
 			else{System.out.println("invalid number enter 0  to go back ");}
-	
+						
 				 break;
                     
 			case 2: System.out.println("""
@@ -1074,7 +1156,7 @@ case 11:
 				int dateTime = input.nextInt();
 				if(dateTime == 0)break;
 				else{System.out.println("invalid number enter 0  to go back ");}
-
+							
 				break;
 			 
 			default: System.out.println("invalid number ");
