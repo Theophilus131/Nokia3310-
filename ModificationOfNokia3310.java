@@ -211,7 +211,7 @@ case 1:
 					 break;
 						
 case 2:
-			  
+			  while(true){
 			String messageMenu = """
 
            		 <<<<<<Messaging Menu>>>>>
@@ -236,23 +236,68 @@ case 2:
 
 			switch(number3) {
 	
-			case 1:
-			  System.out.println("Write messages: ");   break;
+			case 1:  System.out.println("""
+				<<<Write messages>>> 
+				0 - Back
+					""");  
+				int write = input.nextInt();
+				if(write == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				 break;
 			  
-			case 2:
-			  System.out.println("Inbox: "); break;
+			case 2: System.out.println("""
+				<<<Inbox>>> 
+				0 - Back
+				"""); 		
+				int inbox = input.nextInt();
+				if(inbox == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+
+				break;
 		
-			case 3:
-			  System.out.println("Outbox: "); break;
+			case 3: System.out.println("""
+				<<<Outbox>>> 
+				0 - Back
+				""");		
+			
+			int outbox = input.nextInt();
+			if(outbox == 0)break;
+			else{System.out.println("invalid number enter 0  to go back ");}
+
+				 break;
 			    
-			case 4:
-			  System.out.println("Picture Message: ");  break;
+			case 4: System.out.println(""" 
+				<<<Picture Message>>> 
+				0  - Back
+				 """); 
+				
+				int pic = input.nextInt();
+				if(pic == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				 break;
 			   
-			case 5:
-			  System.out.println("Templates: ");    break;
+			case 5: System.out.println(""" 
+				<<<Templates>>>
+				0 - Back
+					 """);   
+				int template = input.nextInt();
+				if(template == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+
+				 break;
 			 
-			case 6:
-			  System.out.println("Smileys: "); break;
+			case 6: System.out.println("""
+					<<<Smileys>>>
+					0 - Back
+
+					 """); 
+				int smiley = input.nextInt();
+				if( smiley == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+
+				break;
 			    
 			case 7:
 			  
@@ -261,12 +306,17 @@ case 2:
                       <<<<Message Settings Menu>>>>>
  1 - Set 1
  2 - Common
+ 0 - Back
 
    				  """;
 			System.out.println(setting);
 			System.out.print("enter a number to select: ");
 			int number4 = input.nextInt();
-			
+			if(number4 == 0)break;
+			else{System.out.println("invalid number enter 0  to go back ");}
+
+					
+
 			switch(number4) {
 			case 1:
 			String messageSetting = """
@@ -276,28 +326,48 @@ case 2:
 1. Message center number
 2. Message sent as
 3. Message validity
+0 - Back
  
     			""";
 
 			System.out.println(messageSetting);
 			System.out.print("enter a number to select: ");
 			int number5 = input.nextInt();
+			if(number5 == 0)break;
+			else{System.out.println("invalid number enter 0  to go back ");}
+				
 			
 			switch(number5) {
-			case 0: return;
-			case 1:
-			  System.out.println("Message Center Number");
-			    break;
-			case 2:
-			   System.out.println("Messages sent As: ");
-			    break;
-			case 3:
-			   System.out.println("Message validity:");
-			    break;
-			default :
-			    break;
-			}
-			    break;
+			
+			case 1: System.out.println("""
+			<<<Message Center Number>>>
+				0 - Back
+				""");   
+			  int center = input.nextInt();
+			  if(center == 0)break;
+			 else{System.out.println("invalid number enter 0 to go back ");}
+				break;
+			  
+			case 2: System.out.println("""
+				<<<Messages sent As>>>
+				0 - Back	
+				 """); 
+			int sent = input.nextInt();
+			  if(sent == 0)break;
+			 else{System.out.println("invalid number enter 0 to go back ");}
+
+				break;
+			
+			case 3: System.out.println("""
+				<<<Message validity>>>
+				0 - Back
+					"""); 
+			int validity = input.nextInt();
+			  if(validity == 0)break;
+			 else{System.out.println("invalid number enter 0 to go back ");}
+				}
+				
+				break;
 			
 
 			case 2:
@@ -307,23 +377,23 @@ case 2:
  1. Delivery reports
  2. Reply via same centre
  3. Character support
+ 0 - Back to menu
   
    			 """;
 
 			System.out.println(commonSetting);
 			System.out.print("enter a number to select: ");
 			int number6 = input.nextInt();
-	                
+	                if(number == 0)break;
+
 			switch(number6) {
-			 case 1:
-			      System.out.println("Delivery reports");break;
+			 case 1: System.out.println("Delivery reports");break;
 			     
-			case 2:
-			     System.out.println("Reply via same centre");break;
+			case 2: System.out.println("Reply via same centre");break;
 			      
-			case 3:
-			     System.out.println("Character Support");
-		             break;
+			case 3: System.out.println("Character Support");
+		            
+			 break;
 		        default:
 			     break;
 			}
@@ -332,18 +402,19 @@ case 2:
 			      break;
 			}
 			      break;
-			case 8:
-			System.out.println("info service");   break;
+
+			case 8: System.out.println("info service");   break;
 			    
-			case 9:
-			System.out.println("Voice mailbox number");break;
+			case 9: System.out.println("Voice mailbox number");break;
 			      
-			case 10:
-			System.out.println("Service command editor"); break;
-			default:
+			case 10: System.out.println("Service command editor"); break;
+			
+				default:
 			       break;
                         }
-			       break;
+			      
+					}// while loop for message closing
+				 break;
 
 
 
@@ -504,13 +575,15 @@ case 5:
 7 - Warning and game tones
 8 - Vibrating alert
 9 - Screen saver
+0 - Back
    
    			 """;
 			System.out.println(tonesMenu);
 			System.out.print("enter a number to select: ");
 			int number11 = input.nextInt();
 			switch(number11) {
-			case 1: 
+			
+	case 1: 
 			System.out.println("Ringing tone"); break;
 			
 			case 2:
@@ -525,14 +598,19 @@ case 5:
 			case 5:
 			System.out.println("Message alert tone"); break;
 		
-			case 6:
-			System.out.println("Keypad tones"); break;
+			case 6: System.out.println("""
+				<<<Keypad tones>>>
+				0 - Back
+				"""); 
+				int key = input.nextInt();
+				if(key == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				break;
 			
-			case 7:
-			System.out.println("Warning and game tones"); break;
+			case 7: System.out.println("Warning and game tones"); break;
 			
-			case 8:
-			System.out.println("Vibrating alert"); break;
+			case 8:System.out.println("Vibrating alert"); break;
 			
 			case 9:
 			System.out.println("Screen saver");
@@ -765,17 +843,67 @@ case 11:
 
 
 			switch(number16) {
-			case 1: System.out.println("Alarm clock");  break;
+			case 1: System.out.println("""
+				<<<Alarm clock>>>
+				0 - Back
+				"""); 
+			int alarm = input.nextInt();
+			if(alarm == 0)break;
+			else{System.out.println("invalid number enter 0  to go back ");}
+	
+				 break;
                     
-			case 2: System.out.println("Clock settings"); break;
+			case 2: System.out.println("""
+				<<<Clock settings>>>
+				0 - Back
+					""");
+				int watch = input.nextInt();
+				if(watch == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+
+				 break;
                          
-			case 3: System.out.println("Date setting");  break;
+			case 3: System.out.println("""
+				<<<Date setting>>>
+				0 - Back
+				""");  
+				int date = input.nextInt();
+				if(date == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+				break;
                         
-			case 4: System.out.println("Stopwatch");   break;
+			case 4: System.out.println("""
+				<<<Stopwatch>>>
+					0 - Back
+					""");   
+				int stopwatch = input.nextInt();
+				if(stopwatch == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+				break;
                          
-			case 5: System.out.println("Countdown timer");  break;
+			case 5: System.out.println("""
+				<<<Countdown timer>>>
+					0 - Back
+					""");  
+				int timer = input.nextInt();
+				if(timer == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+	
+
+					break;
 			  
-			case 6: System.out.println("Auto update of date and time");   break;
+			case 6: System.out.println("""
+				<<<Auto update of date and time>>>
+					0 - Back
+					""");   
+				int dateTime = input.nextInt();
+				if(dateTime == 0)break;
+				else{System.out.println("invalid number enter 0  to go back ");}
+
+				break;
 			 
 			default: System.out.println("invalid number ");
 			break;
